@@ -1,16 +1,16 @@
 {
-  "name": "PumaLayerTypes",
-  "version": "1.0.0",
-  "description": "Set LayerType attributes in PUMA Mongo DB",
-  "main": "index.js",
-  "dependencies": {
-    "async": "^1.5.2",
-    "mongodb": "^2.1.6"
-  },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/froggiewalker/puma-layer-types.git"
-  },
-  "license": "Other",
-  "author": "Jonas Veselka, Gisat"
+	"name": "PumaLayerTypes",
+	"version": "1.0.0",
+	"description": "Set LayerType attributes in PUMA Mongo DB",
+	"main": "index.js",
+	"dependencies": {
+		"async": "^1.5.2",
+		"mongodb": "^2.1.6"
+	},
+	"repository" : {
+		"type" : "git",
+		"url" : "https://github.com/froggiewalker/puma-layer-types.git"
+	},
+	"license": "Other",
+	"author": "Jonas Veselka, Gisat"
 }
