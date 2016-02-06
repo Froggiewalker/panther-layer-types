@@ -74,8 +74,7 @@ async.auto({
 	}]
 
 }, function(err, results) {
-	console.log('ERROR: ', err);
-	console.log('results = ', results);
+	if(err) console.log('ERROR: ', err);
 });
 
 var updateMany = function(collection, filter, setObject, callback){
