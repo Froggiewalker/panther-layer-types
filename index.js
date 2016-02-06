@@ -44,7 +44,7 @@ async.auto({
 		updateMany(collection, filter, setObject, callback);
 	}],
 
-	auids: ['updateVectors', 'datasetCollection', function(callback, results){
+	auids: ['datasetCollection', function(callback, results){
 		var auIDs = [];
 		var datasetCursor = results.datasetCollection.find();
 		datasetCursor.each(function(err, item){
@@ -73,6 +73,9 @@ async.auto({
 		});
 	}]
 
+}, function(err, results) {
+	console.log('ERROR: ', err);
+	console.log('results = ', results);
 });
 
 var updateMany = function(collection, filter, setObject, callback){
