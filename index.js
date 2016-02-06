@@ -10,8 +10,6 @@ async.auto({
 				callback(err);
 			}
 			console.log("Connected to", db.s.databaseName);
-
-			//run(db, layerCollectionName, datasetCollectionName, values, resultAttributeName);
 			callback(null, db);
 		});
 	},
@@ -34,7 +32,7 @@ async.auto({
 		var collection = results.layerCollection;
 		var filter = {justVisualization: true};
 		var setObject = {};
-		setObject[Config.resultAttributeName] = Config.values.justVisValue;
+		setObject[Config.resultAttributeName] = Config.justVisValue;
 		updateMany(collection, filter, setObject, callback);
 	}],
 
@@ -42,7 +40,7 @@ async.auto({
 		var collection = results.layerCollection;
 		var filter = {justVisualization: false};
 		var setObject = {};
-		setObject[Config.resultAttributeName] = Config.values.notJustVisValue;
+		setObject[Config.resultAttributeName] = Config.notJustVisValue;
 		updateMany(collection, filter, setObject, callback);
 	}],
 
@@ -54,7 +52,6 @@ async.auto({
 				return callback(null, auIDs);
 			}
 			if (item.hasOwnProperty("featureLayers")) {
-				//console.log("IDs: ", item.featureLayers);
 				Array.prototype.push.apply(auIDs, item.featureLayers);
 			}
 		});
@@ -64,7 +61,7 @@ async.auto({
 		var collection = results.layerCollection;
 		var filter = {_id: {$in: results.auids}};
 		var setObject = {};
-		setObject[Config.resultAttributeName] = Config.values.auValue;
+		setObject[Config.resultAttributeName] = Config.auValue;
 		updateMany(collection, filter, setObject, callback);
 	}],
 

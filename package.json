@@ -1,7 +1,7 @@
 {
 	"name": "PumaLayerTypes",
 	"version": "1.0.0",
-	"description": "Set LayerType attributes in PUMA Mongo DB",
+	"description": "Set LayerType attributes of layers (areatemplates) in PUMA Mongo DB",
 	"main": "index.js",
 	"dependencies": {
 		"async": "^1.5.2",
