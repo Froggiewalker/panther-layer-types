@@ -9,7 +9,7 @@
 	},
 	"repository" : {
 		"type" : "git",
-		"url" : "https://github.com/froggiewalker/puma-layer-types.git"
+		"url" : "https://github.com/Froggiewalker/puma-layer-types.git"
 	},
 	"license": "Other",
 	"author": "Jonas Veselka, Gisat"
